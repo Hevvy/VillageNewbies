@@ -1,0 +1,2 @@
+# VillageNewbies
+(Ohjelmistotuotanto projekti) 
