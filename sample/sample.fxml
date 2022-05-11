@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="457.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="487.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
   <tabs>
     <Tab text="Mökit ja toiminta-alueet">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="587.0" prefWidth="453.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="566.0">
                <children>
                   <Text layoutX="21.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <TextField fx:id="mokkiAlueField" layoutX="21.0" layoutY="65.0" promptText="Alue (numero)" />
-                  <TextField fx:id="postinumeroField" layoutX="21.0" layoutY="105.0" promptText="Postinumero" />
-                  <TextField fx:id="katuosoiteField" layoutX="21.0" layoutY="147.0" promptText="Katuosoite" />
-                  <TextField fx:id="henkilomaaraField" layoutX="21.0" layoutY="188.0" promptText="Henkilömäärä" />
-                  <TextField fx:id="vuokraField" layoutX="21.0" layoutY="227.0" promptText="Vuokrahinta" />
-                  <TextArea fx:id="varusteluField" layoutX="21.0" layoutY="269.0" prefHeight="58.0" prefWidth="149.0" promptText="Varustelu" />
-                  <TextArea fx:id="kuvausField" layoutX="21.0" layoutY="344.0" prefHeight="122.0" prefWidth="177.0" promptText="Kuvaus" />
-                  <Button fx:id="addMokkiButton" layoutX="21.0" layoutY="482.0" mnemonicParsing="false" onAction="#addMokkiPressed" text="Lisää" />
-                  <TextField fx:id="mokkiNimiField" layoutX="21.0" layoutY="22.0" promptText="Mökkinimi" />
+                  <TextField layoutX="21.0" layoutY="65.0" promptText="Paikkakunta" />
+                  <TextField layoutX="21.0" layoutY="105.0" promptText="Postinumero" />
+                  <TextField layoutX="21.0" layoutY="147.0" promptText="Katuosoite" />
+                  <TextField layoutX="21.0" layoutY="188.0" promptText="Henkilömäärä" />
+                  <TextField layoutX="21.0" layoutY="227.0" promptText="Vuokrahinta" />
+                  <TextArea layoutX="21.0" layoutY="269.0" prefHeight="58.0" prefWidth="149.0" promptText="Varustelu" />
+                  <TextArea layoutX="21.0" layoutY="344.0" prefHeight="122.0" prefWidth="177.0" promptText="Kuvaus" />
+                  <Button layoutX="21.0" layoutY="482.0" mnemonicParsing="false" text="Lisää" />
+                  <TextField layoutX="21.0" layoutY="22.0" promptText="Mökkinimi" />
                </children></AnchorPane>
       </content>
     </Tab>
@@ -27,11 +35,11 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="palvelunimiField" layoutX="25.0" layoutY="25.0" promptText="Palvelun nimi" />
-                  <TextField fx:id="SummaField" layoutX="25.0" layoutY="108.0" promptText="Hinta (sis. ALV)" />
-                  <TextArea fx:id="KuvausField" layoutX="25.0" layoutY="162.0" prefHeight="134.0" prefWidth="196.0" promptText="Kuvaus" />
-                  <Button fx:id="lisääPalveluField" layoutX="25.0" layoutY="320.0" mnemonicParsing="false" onAction="#addPalveluPressed" text="Lisää" />
-                  <TextField fx:id="alueField" layoutX="25.0" layoutY="66.0" promptText="Alue" />
+                  <TextField layoutX="25.0" layoutY="25.0" promptText="Palvelun nimi" />
+                  <TextField layoutX="25.0" layoutY="108.0" promptText="Hinta (sis. ALV)" />
+                  <TextArea layoutX="25.0" layoutY="162.0" prefHeight="134.0" prefWidth="196.0" promptText="Kuvaus" />
+                  <Button layoutX="25.0" layoutY="320.0" mnemonicParsing="false" text="Lisää" />
+                  <TextField layoutX="25.0" layoutY="66.0" promptText="Alue" />
                </children>
             </AnchorPane>
         </content>
@@ -40,13 +48,13 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="etunimiField" layoutX="25.0" layoutY="31.0" promptText="Etunimi" />
-                  <TextField fx:id="sukunimiField" layoutX="25.0" layoutY="71.0" promptText="Sukunimi" />
-                  <TextField fx:id="asiakasOsoiteField" layoutX="25.0" layoutY="114.0" promptText="Lähiosoite" />
-                  <TextField fx:id="asiakasPostinumeroField" layoutX="25.0" layoutY="158.0" promptText="Postinumero" />
-                  <TextField fx:id="emailField" layoutX="25.0" layoutY="201.0" promptText="Sähköposti" />
-                  <TextField fx:id="puhField" layoutX="25.0" layoutY="243.0" promptText="Puhelinnumero" />
-                  <Button fx:id="addAsiakasBtn" layoutX="25.0" layoutY="306.0" mnemonicParsing="false" onAction="#addAsiakasPressed" text="Lisää" />
+                  <TextField layoutX="25.0" layoutY="31.0" promptText="Etunimi" />
+                  <TextField layoutX="25.0" layoutY="71.0" promptText="Sukunimi" />
+                  <TextField layoutX="25.0" layoutY="114.0" promptText="Lähiosoite" />
+                  <TextField layoutX="25.0" layoutY="158.0" promptText="Postinumero" />
+                  <TextField layoutX="25.0" layoutY="201.0" promptText="Sähköposti" />
+                  <TextField layoutX="25.0" layoutY="243.0" promptText="Puhelinnumero" />
+                  <Button layoutX="25.0" layoutY="306.0" mnemonicParsing="false" text="Lisää" />
                </children></AnchorPane>
       </content>
     </Tab>
@@ -63,6 +71,24 @@
                   <TextField layoutX="24.0" layoutY="216.0" promptText="Palvelut" />
                   <TextField layoutX="24.0" layoutY="256.0" promptText="Summa" />
                   <Button layoutX="25.0" layoutY="451.0" mnemonicParsing="false" text="Luo varaus" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Haku">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView layoutX="44.0" layoutY="67.0" prefHeight="431.0" prefWidth="399.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="ID" />
+                      <TableColumn prefWidth="75.0" text="Mökkinimi" />
+                        <TableColumn prefWidth="75.0" text="Etunimi" />
+                        <TableColumn prefWidth="75.0" text="Sukunimi" />
+                    </columns>
+                  </TableView>
+                  <TextField layoutX="44.0" layoutY="29.0" promptText="Haku" />
+                  <Button layoutX="218.0" layoutY="29.0" mnemonicParsing="false" text="Etsi" />
                </children>
             </AnchorPane>
         </content>
